@@ -1,0 +1,53 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; // Consider if you want to keep overflow hidden globally
+}
+
+.consulta-destiny {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  max-width: 98%;
+  margin: auto;
+
+  .back-button {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 10; // Ensure the button is above other content
+  }
+
+  .title {
+      margin-top: 16px; // Adjust top margin to provide spacing
+      padding-left: 60px; // Increase left padding to push the text further from the back button
+      text-align: center; // Align text to the left to utilize the padding effectively
+      width: 100%; // Add padding to avoid overlap with back button
+  }
+
+  .MuiDataGrid-root {
+      width: 100%; // Set the DataGrid width to 100% of its parent container
+      height: 600px; // Set a fixed height or adjust as necessary
+      overflow-x: auto; // Enable horizontal scrolling
+      overflow-y: auto; // Enable vertical scrolling
+      margin: 20px 0; // Add some vertical margin
+  }
+
+  .data-grid-container {
+      width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+      font-size: 16px; // Smaller font size for smaller screens
+      padding-left: 30px; // Less padding for smaller screens
+  }
+  .back-button {
+      top: 10px; // Adjust position to fit smaller screens
+  }
+}

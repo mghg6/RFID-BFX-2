@@ -1,0 +1,98 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.catalogo-bfx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 98%;
+    margin: auto;
+
+    .back-button {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: 10;
+    }
+
+    .title {
+        margin-top: 16px;
+        padding-left: 60px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .MuiDataGrid-root {
+        width: 100%;
+        height: 600px;
+        overflow-x: auto;
+        overflow-y: auto;
+        margin: 20px 0;
+    }
+  
+    .data-grid-container {
+        width: 100%;
+    }
+
+    .bfx-modal-content {
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        position: relative;
+        overflow-y: auto;
+    }
+
+    .bfx-modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .bfx-modal-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .bfx-modal-body .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+    }
+
+    .bfx-modal-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-etiquetado {
+        max-height: 60px;
+    }
+
+    .bfx-generate-button {
+        background-color: #46707e;
+        color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 16px;
+        padding-left: 30px;
+    }
+    .back-button {
+        top: 10px;
+    }
+}

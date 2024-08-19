@@ -1,0 +1,41 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .catalogo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px;
+    position: relative;
+
+    .MuiDataGrid-root {
+      width: 100%; // Set the DataGrid width to 100% of its parent container
+      height: 600px; // Set a fixed height or adjust as necessary
+      overflow-x: auto; // Enable horizontal scrolling
+      overflow-y: auto; // Enable vertical scrolling
+      margin: 20px 0; // Add some vertical margin
+  }
+  
+  .data-grid-container {
+      width: 100%;
+  }
+  }
+
+  .catalogo-area .back-button {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  
+  .catalogo-area .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  
